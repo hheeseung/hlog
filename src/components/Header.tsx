@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className='flex justify-between items-center py-2'>
       <h1 className='font-bold text-2xl'>
-        <Link href='/'>Hlog</Link>
+        <Link href='/'>HLog</Link>
       </h1>
       <ul className='flex items-center justify-evenly space-x-4'>
         <Link href='/'>Home</Link>

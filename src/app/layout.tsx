@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hlog',
+  title: 'HLog',
   description: '나의 개발로그',
 };
 
