@@ -3,7 +3,7 @@ import Avatar from '../../public/images/avatar.jpeg';
 
 export default function Hero() {
   return (
-    <div className='text-center my-5'>
+    <section className='text-center my-5'>
       <Image
         src={Avatar}
         alt='avatar'
@@ -14,6 +14,6 @@ export default function Hero() {
       />
       <h2 className='font-semibold text-xl'>Heeseung Ha</h2>
       <p>기록은 나의 힘!</p>
-    </div>
+    </section>
   );
 }

@@ -10,7 +10,7 @@ interface Card {
 
 export default function PostCard({ title, description, date, category, path }: Card) {
   return (
-    <li className='w-full rounded-lg shadow-md'>
+    <article className='w-full rounded-lg shadow-md'>
       <Image
         src={`/images/posts/${path}.png`}
         width={300}
@@ -27,6 +27,6 @@ export default function PostCard({ title, description, date, category, path }: C
         </div>
         <p className='text-xs bg-green-100 w-fit mx-auto px-1 rounded-md'>{category}</p>
       </div>
-    </li>
+    </article>
   );
 }
