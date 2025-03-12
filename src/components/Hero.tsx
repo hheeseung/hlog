@@ -3,7 +3,7 @@ import Avatar from '../../public/images/avatar.jpeg';
 
 export default function Hero() {
   return (
-    <section className='text-center my-5'>
+    <section className='text-center my-10'>
       <Image
         src={Avatar}
         alt='avatar'
