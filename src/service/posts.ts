@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-interface Post {
+export interface Post {
   title: string;
   description: string;
   date: string;
