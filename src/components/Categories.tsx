@@ -8,7 +8,7 @@ interface Props {
 
 export default function Categories({ categories, selected, setSelected }: Props) {
   return (
-    <nav className='w-1/4 flex flex-col text-lg'>
+    <nav className='w-1/4 flex flex-col'>
       <h2 className='font-bold border-b-2 mb-2 border-sky-500 w-fit mx-auto'>Category</h2>
       {categories.map((category, index) => (
         <button
