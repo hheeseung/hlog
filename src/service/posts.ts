@@ -11,8 +11,9 @@ export interface Post {
 }
 
 export async function getAllPosts(): Promise<Post[]> {
-  const posts = await fs.readFile(path.join(process.cwd(), 'data', 'posts.json'), 'utf-8');
-  return JSON.parse(posts);
+  const data = await fs.readFile(path.join(process.cwd(), 'data', 'posts.json'), 'utf-8');
+  const posts: Post[] = JSON.parse(data);
+  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export async function getFeaturedPosts(): Promise<Post[]> {
