@@ -1,6 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react/no-children-prop */
 'use client';
 import { PostDetail } from '@/service/posts';
 import React from 'react';
@@ -15,7 +12,7 @@ interface Props {
 
 export default function MarkdownContent({ post }: Props) {
   return (
-    <article className='prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-neutral-200 prose-blockquote:border-l-4 prose-a:underline prose-li:list-disc'>
+    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-neutral-200 prose-blockquote:border-l-4 prose-a:underline prose-li:list-disc'>
       <Markdown
         remarkPlugins={[remarkGfm]}
         children={post.content}
@@ -38,7 +35,11 @@ export default function MarkdownContent({ post }: Props) {
             );
           },
           img: ({ ...props }) => (
-            <img style={{ width: '70%', height: 'auto', margin: '0 auto' }} {...props} alt={`${post.path}`} />
+            <img
+              style={{ width: '70%', height: 'auto', margin: '0 auto', borderRadius: '10px' }}
+              {...props}
+              alt={`${post.path}`}
+            />
           ),
         }}
       />
