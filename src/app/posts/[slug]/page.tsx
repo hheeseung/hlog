@@ -6,7 +6,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = await getDetailPost(slug);
 
   return (
-    <section className='p-2 lg:p-0'>
+    <section className='p-2 xl:p-0'>
       <h1>{post.title}</h1>
       <p>{post.description}</p>
       <MarkdownContent post={post} />
