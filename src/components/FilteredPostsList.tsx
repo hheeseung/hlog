@@ -19,7 +19,7 @@ export default function FilteredPostsList({ categories, posts }: Props) {
   const filtered = selected === ALL_POSTS ? posts : posts.filter((post) => post.category === selected);
 
   return (
-    <section className='flex p-2 my-3 xl:p-0'>
+    <section className='flex flex-col-reverse p-2 my-3 xl:flex-row xl:p-0'>
       <FilteredPostCard posts={filtered} />
       <Categories categories={category} selected={selected} setSelected={setSelected} />
     </section>
