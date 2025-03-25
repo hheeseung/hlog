@@ -3,7 +3,7 @@ import { PostDetail } from '@/service/posts';
 import React from 'react';
 import Markdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 
 export default function MarkdownContent({ post }: Props) {
   return (
-    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-neutral-200 prose-blockquote:border-l-4 prose-a:underline prose-li:list-disc'>
+    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-sky-100 prose-blockquote:border-l-4 prose-blockquote:border-l-sky-500 prose-blockquote:bg-neutral-50 prose-blockquote:p-1 prose-a:underline prose-li:list-disc'>
       <Markdown
         remarkPlugins={[remarkGfm]}
         children={post.content}
@@ -26,7 +26,7 @@ export default function MarkdownContent({ post }: Props) {
                 PreTag='div'
                 children={String(children).replace(/\n$/, '')}
                 language={match[1]}
-                style={oneDark}
+                style={oneLight}
               />
             ) : (
               <code {...rest} className={className}>
@@ -36,7 +36,8 @@ export default function MarkdownContent({ post }: Props) {
           },
           img: ({ ...props }) => (
             <img
-              style={{ width: '70%', height: 'auto', margin: '0 auto', borderRadius: '10px' }}
+              className='w-full mx-auto rounded-md xl:w-3/4'
+              // style={{ width: '70%', height: 'auto', margin: '0 auto', borderRadius: '10px' }}
               {...props}
               alt={`${post.path}`}
             />

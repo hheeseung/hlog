@@ -1,4 +1,5 @@
 import MarkdownContent from '@/components/MarkdownContent';
+import Metadata from '@/components/Metadata';
 import { getDetailPost } from '@/service/posts';
 import Image from 'next/image';
 
@@ -13,16 +14,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         width={1280}
         height={960}
         alt={slug}
-        className='object-cover w-full h-36 xl:h-96 rounded-t-md'
+        className='object-cover w-full h-full xl:h-96 rounded-t-md'
         priority
       />
-      <div className='flex flex-col xl:flex-row justify-between mt-4 align-top *:px-4'>
-        <div className='space-y-2'>
-          <h1 className='text-4xl font-bold'>{post.title}</h1>
-          <p className='text-lg font-semibold border-b-2 border-sky-500 w-fit'>{post.description}</p>
-        </div>
-        <p className='mt-2 xl:mt-0'>{post.date}</p>
-      </div>
+      <Metadata post={post} />
       <MarkdownContent post={post} />
     </section>
   );
