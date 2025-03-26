@@ -12,7 +12,7 @@ interface Props {
 
 export default function MarkdownContent({ post }: Props) {
   return (
-    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-sky-100 prose-blockquote:border-l-4 prose-blockquote:border-l-sky-500 prose-blockquote:bg-neutral-50 prose-blockquote:p-1 prose-a:underline prose-li:list-disc'>
+    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-sky-100 prose-code:text-red-500 prose-blockquote:border-l-4 prose-blockquote:border-l-sky-500 prose-blockquote:bg-neutral-50 prose-blockquote:p-1 prose-a:underline prose-li:list-disc'>
       <Markdown
         remarkPlugins={[remarkGfm]}
         children={post.content}

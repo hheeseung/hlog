@@ -10,11 +10,11 @@ export default function CarouselList({ children }: Props) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1280 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1280, min: 768 },
-      items: 3,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
@@ -23,7 +23,7 @@ export default function CarouselList({ children }: Props) {
   };
 
   return (
-    <Carousel itemClass='mr-3 my-3' responsive={responsive} infinite={true}>
+    <Carousel itemClass='md:mr-2 my-3' responsive={responsive} infinite={true}>
       {children}
     </Carousel>
   );

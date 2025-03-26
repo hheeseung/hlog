@@ -1,4 +1,6 @@
-import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import React, { useEffect } from 'react';
 
 interface Props {
   categories: string[];
@@ -7,20 +9,29 @@ interface Props {
 }
 
 export default function Categories({ categories, selected, setSelected }: Props) {
+  const pathname = usePathname();
+  const currentPath = pathname.split('/')[2];
+
+  useEffect(() => {
+    setSelected(currentPath);
+  }, [currentPath, setSelected]);
+
   return (
-    <nav className='flex flex-row items-center w-full gap-2 overflow-x-scroll xl:gap-0 xl:w-1/5 xl:flex-col'>
-      <h2 className='hidden mx-auto mb-2 font-bold border-b-2 xl:block border-sky-500 w-fit'>Category</h2>
-      {categories.map((category, index) => (
-        <button
-          className={`${
-            category === selected && 'font-bold text-sky-500'
-          } cursor-pointer hover:text-sky-500 py-2 xl:py-0`}
-          onClick={() => setSelected(category)}
-          key={index}
-        >
-          {category}
-        </button>
-      ))}
-    </nav>
+    <>
+      <nav className='flex items-center gap-5 mb-5 font-semibold'>
+        {categories.map((category, index) => (
+          <Link
+            href={`/posts/${category}`}
+            className={`${
+              category === selected && 'bg-sky-500 text-white'
+            } px-2 py-1 cursor-pointer hover:bg-sky-100 hover:text-sky-500 rounded-md hover:rounded-md hover:transition-all`}
+            key={index}
+          >
+            {category}
+          </Link>
+        ))}
+      </nav>
+      <nav></nav>
+    </>
   );
 }

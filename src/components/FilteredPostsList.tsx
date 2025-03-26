@@ -10,7 +10,7 @@ interface Props {
   posts: Post[];
 }
 
-const ALL_POSTS = 'all';
+const ALL_POSTS = 'All';
 
 export default function FilteredPostsList({ categories, posts }: Props) {
   const category = [ALL_POSTS, ...categories];
@@ -19,9 +19,9 @@ export default function FilteredPostsList({ categories, posts }: Props) {
   const filtered = selected === ALL_POSTS ? posts : posts.filter((post) => post.category === selected);
 
   return (
-    <section className='flex flex-col-reverse p-2 my-3 xl:flex-row xl:p-0'>
-      <FilteredPostCard posts={filtered} />
+    <section className='flex flex-col p-2 my-3 xl:p-0'>
       <Categories categories={category} selected={selected} setSelected={setSelected} />
+      <FilteredPostCard posts={filtered} />
     </section>
   );
 }

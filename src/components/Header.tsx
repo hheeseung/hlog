@@ -15,7 +15,7 @@ export default function Header() {
         <Link href='/' className={`${pathname === '/' && 'font-bold text-sky-500'}`}>
           Home
         </Link>
-        <Link href='/posts' className={`${pathname.includes('/posts') && 'font-bold text-sky-500'}`}>
+        <Link href='/posts/All' className={`${pathname.includes('/posts') && 'font-bold text-sky-500'}`}>
           Posts
         </Link>
       </ul>
