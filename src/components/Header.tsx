@@ -7,7 +7,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className='flex items-center justify-between p-4 xl:px-0'>
+    <header className='flex items-center justify-between p-4 font-medium xl:px-0'>
       <h1 className='text-3xl font-bold'>
         <Link href='/'>HLog</Link>
       </h1>

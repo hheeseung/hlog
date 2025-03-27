@@ -10,19 +10,16 @@ interface Props {
   posts: Post[];
 }
 
-const ALL_POSTS = 'All';
+const ALL_POSTS = 'all';
 
 export default function FilteredPostsList({ categories, posts }: Props) {
   const category = [ALL_POSTS, ...categories];
   const [selected, setSelected] = useState(ALL_POSTS);
 
-  const filtered =
-    selected === ALL_POSTS.toLowerCase()
-      ? posts
-      : posts.filter((post) => post.category.toLowerCase() === selected.toLowerCase());
+  const filtered = selected === ALL_POSTS ? posts : posts.filter((post) => post.category === selected);
 
   return (
-    <section className='flex flex-col p-2 mt-3 mb-10 xl:p-0'>
+    <section className='flex flex-col p-4 mt-3 mb-10 xl:p-0'>
       <Categories categories={category} selected={selected} setSelected={setSelected} />
       <FilteredPostCard posts={filtered} />
     </section>

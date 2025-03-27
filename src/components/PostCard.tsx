@@ -13,7 +13,7 @@ interface Card {
 export default function PostCard({ title, description, date, category, path }: Card) {
   return (
     <article className='w-full rounded-lg shadow-md hover:shadow-xl hover:transition-shadow'>
-      <Link href={`/posts/${category.toLowerCase()}/${path}`}>
+      <Link href={`/posts/${category}/${path}`}>
         <Image
           src={`/images/posts/${path}.png`}
           width={300}
