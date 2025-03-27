@@ -23,7 +23,7 @@ export default function CarouselList({ children }: Props) {
   };
 
   return (
-    <Carousel itemClass='md:mr-2 my-3' responsive={responsive} infinite={true}>
+    <Carousel itemClass='md:mr-2 mt-3 mb-10' responsive={responsive} infinite={true}>
       {children}
     </Carousel>
   );

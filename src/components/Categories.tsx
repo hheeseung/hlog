@@ -21,9 +21,9 @@ export default function Categories({ categories, selected, setSelected }: Props)
       <nav className='flex items-center gap-5 mb-5 font-semibold'>
         {categories.map((category, index) => (
           <Link
-            href={`/posts/${category}`}
+            href={`/posts/${category.toLowerCase()}`}
             className={`${
-              category === selected && 'bg-sky-500 text-white'
+              category.toLowerCase() === selected && 'bg-sky-500 text-white'
             } px-2 py-1 cursor-pointer hover:bg-sky-100 hover:text-sky-500 rounded-md hover:rounded-md hover:transition-all`}
             key={index}
           >

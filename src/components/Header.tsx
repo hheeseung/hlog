@@ -11,11 +11,11 @@ export default function Header() {
       <h1 className='text-3xl font-bold'>
         <Link href='/'>HLog</Link>
       </h1>
-      <ul className='flex items-center space-x-4 text-lg justify-evenly'>
-        <Link href='/' className={`${pathname === '/' && 'font-bold text-sky-500'}`}>
+      <ul className='flex items-center space-x-4 justify-evenly'>
+        <Link href='/' className={`${pathname === '/' && 'border-b-sky-500 border-b-2'}`}>
           Home
         </Link>
-        <Link href='/posts/All' className={`${pathname.includes('/posts') && 'font-bold text-sky-500'}`}>
+        <Link href='/posts/all' className={`${pathname.includes('/posts') && 'border-b-sky-500 border-b-2'}`}>
           Posts
         </Link>
       </ul>
