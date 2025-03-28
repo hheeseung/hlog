@@ -12,8 +12,8 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'HLog',
-  description: '나의 개발로그',
+  title: '하희승 | 성장하는 개발자',
+  description: '광활한 웹을 헤엄치며 꾸준히 상향곡선을 그리기 위해 노력하는 개발자입니다.',
 };
 
 export default function RootLayout({

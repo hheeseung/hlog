@@ -52,7 +52,7 @@ export default function Categories({ categories, selected, setSelected }: Catego
               className='flex items-center justify-between w-full px-4 py-2 text-left hover:bg-sky-100 hover:rounded-lg'
               key={category}
             >
-              {category}
+              <span>{category}</span>
               {currentPath === category.toLowerCase() && <FaCheck />}
             </button>
           ))}
