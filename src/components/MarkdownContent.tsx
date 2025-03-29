@@ -12,7 +12,7 @@ interface Props {
 
 export default function MarkdownContent({ post }: Props) {
   return (
-    <article className='p-4 prose-base prose-headings:font-bold prose-code:rounded-md prose-code:px-1 prose-code:bg-sky-100 prose-code:text-red-500 prose-blockquote:border-l-4 prose-blockquote:border-l-sky-500 prose-blockquote:bg-neutral-50 prose-blockquote:p-1 prose-a:underline prose-li:list-disc'>
+    <article className='p-4 prose-base prose-headings:font-bold prose-blockquote:border-l-4 prose-blockquote:border-l-sky-500 prose-blockquote:bg-neutral-50 prose-blockquote:p-2 prose-a:underline prose-a:text-sky-500 prose-li:list-disc'>
       <Markdown
         remarkPlugins={[remarkGfm]}
         children={post.content}
@@ -29,19 +29,12 @@ export default function MarkdownContent({ post }: Props) {
                 style={oneLight}
               />
             ) : (
-              <code {...rest} className={className}>
+              <code {...rest} className={`px-1 bg-sky-100 text-red-500 rounded-md ${className || ''}`}>
                 {children}
               </code>
             );
           },
-          img: ({ ...props }) => (
-            <img
-              className='w-full mx-auto rounded-md xl:w-3/4'
-              // style={{ width: '70%', height: 'auto', margin: '0 auto', borderRadius: '10px' }}
-              {...props}
-              alt={`${post.path}`}
-            />
-          ),
+          img: ({ ...props }) => <img className='w-full mx-auto rounded-md xl:w-3/4' {...props} alt={`${post.path}`} />,
         }}
       />
     </article>
