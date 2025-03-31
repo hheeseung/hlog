@@ -15,7 +15,7 @@ export default function PostCard({ title, description, date, category, path }: C
     <article className='w-full rounded-lg shadow-md hover:shadow-xl hover:transition-shadow'>
       <Link href={`/posts/${category}/${path}`}>
         <Image
-          src={`/images/posts/${path}.png`}
+          src={`/images/thumbnails/${path}.png`}
           width={300}
           height={170}
           priority

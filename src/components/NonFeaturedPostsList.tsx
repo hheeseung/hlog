@@ -1,4 +1,3 @@
-import 'react-multi-carousel/lib/styles.css';
 import { getNonFeaturedPosts } from '@/service/posts';
 import PostCard from './PostCard';
 import CarouselList from './CarouselList';

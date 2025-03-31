@@ -6,14 +6,7 @@ export default function FilteredPostCard({ posts }: { posts: Post[] }) {
   return (
     <section className='grid w-full gap-4 mb-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
       {posts.map(({ path, title, description, date, category }) => (
-        <PostCard
-          key={path}
-          title={title}
-          description={description}
-          date={date}
-          category={category.toLowerCase()}
-          path={path}
-        />
+        <PostCard key={path} title={title} description={description} date={date} category={category} path={path} />
       ))}
     </section>
   );

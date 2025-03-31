@@ -1,34 +1,50 @@
 [
   {
+    "title": "SEO를 개선해볼까",
+    "description": "동적 메타데이터 태그 생성을 통한 SEO 개선하기",
+    "date": "2025-03-28",
+    "category": "project",
+    "path": "lets-make-blog-04",
+    "featured": false
+  },
+  {
+    "title": "Next.js로 블로그를 만들어 보자",
+    "description": "Next.js 15버전 블로그의 MVP 기능 정의",
+    "date": "2025-03-24",
+    "category": "project",
+    "path": "lets-make-blog-intro",
+    "featured": false
+  },
+  {
+    "title": "블로그 포스트 목록을 불러오기",
+    "description": "파일 모듈과 Next.js 컴포넌트 구조",
+    "date": "2025-03-25",
+    "category": "project",
+    "path": "lets-make-blog-01",
+    "featured": false
+  },
+  {
+    "title": "캐러셀을 활용하여 멋진 목록 만들기",
+    "description": "React Multi Carousel 라이브러리 활용기",
+    "date": "2025-03-26",
+    "category": "project",
+    "path": "lets-make-blog-02",
+    "featured": true
+  },
+  {
+    "title": "포스팅을 카테고리별로 모아보자",
+    "description": "카테고리 필터링 방식 적용하기",
+    "date": "2025-03-27",
+    "category": "project",
+    "path": "lets-make-blog-03",
+    "featured": true
+  },
+  {
     "title": "2021년 리뷰",
     "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2021-12-31",
     "category": "review",
     "path": "review-2021",
-    "featured": false
-  },
-  {
-    "title": "자바스크립트 기초 문법",
-    "description": "기본 문법부터 사용하는 실전까지 최종정리",
-    "date": "2022-05-08",
-    "category": "javascript",
-    "path": "javascript-basic",
-    "featured": false
-  },
-  {
-    "title": "자바스크립트 10가지 프로팁!",
-    "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
-    "date": "2022-06-15",
-    "category": "javascript",
-    "path": "javascript-10-tips",
-    "featured": true
-  },
-  {
-    "title": "Node 기초 정리",
-    "description": "기본 적인 Node 사용법에 대해 전부 정리!",
-    "date": "2022-08-21",
-    "category": "backend",
-    "path": "node-basic",
     "featured": false
   },
   {
@@ -40,27 +56,11 @@
     "featured": false
   },
   {
-    "title": "Node 프로 팁!",
-    "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
-    "date": "2023-04-10",
-    "category": "backend",
-    "path": "node-pro-tips",
-    "featured": true
-  },
-  {
     "title": "리액트 Best Practice!",
     "description": "리액트를 정확하게 사용하는 방법들을 정리",
     "date": "2023-04-15",
     "category": "frontend",
     "path": "best-react-practices",
-    "featured": true
-  },
-  {
-    "title": "리액트 18버전!",
-    "description": "리액트 18에 추가된 사항들 정리",
-    "date": "2023-05-02",
-    "category": "frontend",
-    "path": "react18-walkthrough",
     "featured": true
   },
   {

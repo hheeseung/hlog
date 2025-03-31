@@ -43,17 +43,17 @@ export default function Categories({ categories, selected, setSelected }: Catego
       <div
         className={`${
           !isOpen && 'border-none'
-        } mt-2 flex flex-col w-48 border rounded-lg absolute z-10 bg-white items-start`}
+        } mt-2 flex flex-col w-48 border rounded-lg absolute z-10 bg-white items-start p-1`}
       >
         {isOpen &&
           categories.map((category) => (
             <button
               onClick={(e) => onCategoryClick(e, category)}
-              className='flex items-center justify-between w-full px-4 py-2 text-left hover:bg-sky-100 hover:rounded-lg'
+              className='flex items-center justify-between w-full p-2 text-left hover:bg-sky-100 hover:rounded-lg'
               key={category}
             >
               <span>{category}</span>
-              {currentPath === category.toLowerCase() && <FaCheck />}
+              {currentPath === category && <FaCheck />}
             </button>
           ))}
       </div>
