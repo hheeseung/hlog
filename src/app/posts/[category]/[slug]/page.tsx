@@ -25,7 +25,7 @@ export default async function PostPage({ params }: Props) {
   return (
     <section className='mx-4 mb-10 rounded-md shadow-md xl:mx-0'>
       <Image
-        src={`/images/posts/${post.path}.png`}
+        src={`/images/thumbnails/${post.path}.png`}
         width={1280}
         height={960}
         alt={post.path}
