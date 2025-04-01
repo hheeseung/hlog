@@ -1,6 +1,6 @@
 import MarkdownContent from '@/components/MarkdownContent';
 import Metadata from '@/components/Metadata';
-import { getDetailPost } from '@/service/posts';
+import { getAllPosts, getDetailPost } from '@/service/posts';
 import Image from 'next/image';
 
 interface Props {
@@ -36,4 +36,11 @@ export default async function PostPage({ params }: Props) {
       <MarkdownContent post={post} />
     </section>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({
+    slug: post.path,
+  }));
 }
