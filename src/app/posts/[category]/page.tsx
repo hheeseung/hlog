@@ -11,6 +11,15 @@ export async function generateMetadata({ params }: Props) {
     title: `${category} | 하희승의 개발로그`,
     description: '나만의 고찰을 담았습니다.',
     category,
+    openGraph: {
+      title: `${category} | 하희승의 개발로그`,
+      description: category,
+      siteName: 'Hlog',
+      iamges: {
+        url: '/images/avatar.jpeg',
+      },
+      type: 'website',
+    },
   };
 }
 

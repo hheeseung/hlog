@@ -14,6 +14,15 @@ export async function generateMetadata({ params }: Props) {
     title: `${post.title} | 하희승의 개발로그`,
     description: post.description,
     category: post.category,
+    openGraph: {
+      title: `${post.title} | 하희승의 개발로그`,
+      description: post.description,
+      siteName: 'Hlog',
+      iamges: {
+        url: `/images/thumbnails/${post.path}.png`,
+      },
+      type: 'website',
+    },
     post,
   };
 }
