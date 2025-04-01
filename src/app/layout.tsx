@@ -17,9 +17,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: '하희승 | 성장하는 개발자',
     description: '광활한 웹을 헤엄치며 꾸준히 상향곡선을 그리기 위해 노력하는 개발자입니다.',
-    images: {
-      url: '/images/avatar.jpeg',
-    },
+    images: [
+      {
+        url: 'https://velog.velcdn.com/images/hheeseung/post/f583192e-761b-44c7-9ddb-6ca108c81f0f/image.jpeg',
+        width: 800,
+        height: 400,
+      },
+      {
+        url: 'https://velog.velcdn.com/images/hheeseung/post/f583192e-761b-44c7-9ddb-6ca108c81f0f/image.jpeg',
+        width: 1200,
+        height: 600,
+      },
+    ],
   },
 };
 
