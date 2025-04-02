@@ -1,5 +1,13 @@
 [
   {
+    "title": "브라우저 렌더링 원리",
+    "description": "프론트엔드 개발자라면 필수로 알아야 할 지식 파헤치기",
+    "date": "2025-04-02",
+    "category": "cs",
+    "path": "browser-rendering",
+    "featured": false
+  },
+  {
     "title": "SEO를 개선해볼까",
     "description": "동적 메타데이터 태그 생성을 통한 SEO 개선하기",
     "date": "2025-03-28",
@@ -37,38 +45,6 @@
     "date": "2025-03-27",
     "category": "project",
     "path": "lets-make-blog-03",
-    "featured": true
-  },
-  {
-    "title": "2021년 리뷰",
-    "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2021-12-31",
-    "category": "review",
-    "path": "review-2021",
-    "featured": false
-  },
-  {
-    "title": "2022년 리뷰",
-    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-12-31",
-    "category": "review",
-    "path": "review-2022",
-    "featured": false
-  },
-  {
-    "title": "리액트 Best Practice!",
-    "description": "리액트를 정확하게 사용하는 방법들을 정리",
-    "date": "2023-04-15",
-    "category": "frontend",
-    "path": "best-react-practices",
-    "featured": true
-  },
-  {
-    "title": "2023년 리뷰",
-    "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2023-12-31",
-    "category": "review",
-    "path": "review-2023",
     "featured": true
   }
 ]
