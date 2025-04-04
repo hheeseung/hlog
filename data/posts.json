@@ -1,5 +1,13 @@
 [
   {
+    "title": "주소창에 URL을 입력하면 일어나는 일",
+    "description": "URL 이동 시 어떤 프로세스를 거쳐 화면에 나타날까?",
+    "date": "2025-04-04",
+    "category": "cs",
+    "path": "url-loading-process",
+    "featured": false
+  },
+  {
     "title": "브라우저 렌더링 원리",
     "description": "프론트엔드 개발자라면 필수로 알아야 할 지식 파헤치기",
     "date": "2025-04-02",
