@@ -13,7 +13,7 @@ export default function Hero() {
         priority
       />
       <h2 className='text-xl font-semibold'>Heeseung Ha</h2>
-      <p>기록은 나의 힘!</p>
+      <p>기세로 몰아붙인다 가즈아</p>
     </section>
   );
 }
